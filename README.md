@@ -1,8 +1,8 @@
-LangGraph SQL Agent
+**LangGraph SQL Agent**
 
 An intelligent SQL agent built with LangGraph that turns natural language questions into safe, validated SQL queries — executes them against a SQLite database, and automatically fixes failed queries.
 
-Overview
+**Overview**
 
 This project demonstrates a multi-step agentic workflow for database querying:
 
@@ -15,7 +15,7 @@ Execute the validated query
 Auto-fix failed queries (up to 3 retry attempts) by analyzing the error and regenerating the query
 
 
-Architecture
+**Architecture**
 
 The agent is built as a state graph using LangGraph:
 
@@ -27,15 +27,15 @@ tools node — executes the selected tool (schema lookup, query generation, exec
 Conditional routing — loops between agent and tools until the agent has a final answer, then routes to END
 
 
-Tools
+**Tools**
 
 ToolPurposeget_database_schemaFetches table structure and column infogenerate_sql_queryConverts a natural language question into a SQL queryvalidate_sql_queryChecks the query is a safe SELECT statement before executionexecute_sql_queryRuns the validated query against the databasefix_sql_errorAnalyzes a failed query + error message and generates a corrected query
 
-Database
+**Database**
 
 Uses the employees-db-sqlite sample dataset — a SQLite database containing employee records, salaries, departments, and job titles.
 
-Tech Stack
+**Tech Stack**
 
 
 LangGraph — agent orchestration / state graph
@@ -45,7 +45,7 @@ SQLite — database engineLangGraph SQL Agent
 
 An intelligent SQL agent built with LangGraph that turns natural language questions into safe, validated SQL queries — executes them against a SQLite database, and automatically fixes failed queries.
 
-Overview
+**Overview**
 
 This project demonstrates a multi-step agentic workflow for database querying:
 
@@ -58,7 +58,7 @@ Execute the validated query
 Auto-fix failed queries (up to 3 retry attempts) by analyzing the error and regenerating the query
 
 
-Architecture
+**Architecture**
 
 The agent is built as a state graph using LangGraph:
 
@@ -70,15 +70,15 @@ tools node — executes the selected tool (schema lookup, query generation, exec
 Conditional routing — loops between agent and tools until the agent has a final answer, then routes to END
 
 
-Tools
+**Tools**
 
 ToolPurposeget_database_schemaFetches table structure and column infogenerate_sql_queryConverts a natural language question into a SQL queryvalidate_sql_queryChecks the query is a safe SELECT statement before executionexecute_sql_queryRuns the validated query against the databasefix_sql_errorAnalyzes a failed query + error message and generates a corrected query
 
-Database
+**Database**
 
 Uses the employees-db-sqlite sample dataset — a SQLite database containing employee records, salaries, departments, and job titles.
 
-Tech Stack
+**Tech Stack**
 
 
 LangGraph — agent orchestration / state graph
