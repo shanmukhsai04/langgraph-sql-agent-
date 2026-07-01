@@ -1,0 +1,26 @@
+# Environment variables / secrets
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Database files (usually large / dataset-specific)
+*.db
+*.sqlite
+*.sqlite3
+sqllite/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
