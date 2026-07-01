@@ -26,6 +26,7 @@ agent node — decides which tool to call next based on the conversation state a
 tools node — executes the selected tool (schema lookup, query generation, execution, or error fixing)
 Conditional routing — loops between agent and tools until the agent has a final answer, then routes to END
 
+<img width="1372" height="872" alt="image" src="https://github.com/user-attachments/assets/16008b91-1327-4182-aaae-0365b1237e12" />
 
 **Tools**
 
